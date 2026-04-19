@@ -11,4 +11,26 @@
 - while文
 - コメントアウト
 ## 第4章 プログラミングでWebサイトに動きをつけよう
-未定
+- DOMとは（HTMLとJavaScriptのつながり）
+  - ブラウザがHTMLを読み込むと「DOMツリー」が作られる
+  - JavaScriptからDOMを操作することでページを動的に変えられる
+- querySelector で要素を取得する
+  - document.querySelector("セレクタ") でHTML要素を取得
+  - CSSと同じセレクタ記法（タグ名・クラス・ID）が使える
+- textContent/innerHTML で内容を書き換える
+  - 取得した要素の .textContent でテキストを変更
+  - .innerHTML でHTML込みの内容を変更
+- style で見た目を変える
+  - 取得した要素の .style.プロパティ で直接CSSを変更
+- 関数（function）の基礎
+  - function キーワードによる関数定義
+  - アロー関数（() => {}）の書き方
+  - 引数と戻り値
+- addEventListener でイベントを検知する
+  - element.addEventListener("イベント名", 関数) の構文
+  - クリックイベント（"click"）を中心に学ぶ
+- input要素から値を取得する
+  - input要素の .value プロパティで入力内容を取得
+- 演習：名前入力フォームを作ろう
+  - テキストボックスに名前を入力してボタンを押すと「こんにちは，○○さん！」と表示されるページ
+  - querySelector / addEventListener / value / textContent / if文（空欄チェック）を組み合わせる

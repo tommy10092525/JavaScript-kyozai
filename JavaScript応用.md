@@ -14,8 +14,8 @@ Progate相当のJavaScriptが身についていることを前提としている
 ### 分割代入（オブジェクト）
   オブジェクトのプロパティを変数として取り出したいときには`let(const){プロパティ名…}=取りしたいオブジェクト`と書けます。  
 ```javascript
-const getUser=()=>{
-  return {id:1,name:"tommy"}
+const getUser = () => {
+  return {id:1,name:"Tommy"}
 }
 
 const user=getUser();
@@ -35,18 +35,18 @@ const [first,second,third]=numbers
 ### 【前提】 immutableについて
 すべての変数（インスタンス）はimmutableかどうかが設定されています。
 immutableなオブジェクトとは作成後にその状態を変えることのできないオブジェクトです。
-例えば`let n=1`，`const name="tommy"`など数値型，文字列型，真偽型，などは作成した後に変えることができません。
+例えば`let n=1`，`const name="Tommy"`など数値型，文字列型，真偽型，などは作成した後に変えることができません。
 ```javascript
 let n=1
 n++
 
-let name="tommy"
+let name="Tommy"
 name[0]="s"
 
 let numbers=[]
 numbers.push(2)
 console.log(n,name,numbers)
-// 2 tommy numbers
+// 2 Tommy numbers
 ```
 - この場合`n`の値は1から2に変化していますが，内部的には「1」という数値は一度破棄され，「2」という新しい実態が生成されています。
 - `name`はimmutableなのでインデックスで文字を参照することはできますが，文字を変更することはできません。
